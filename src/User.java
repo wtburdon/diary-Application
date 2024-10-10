@@ -22,4 +22,23 @@ public class User {
         return this.username.equals(username);
     }
 
+    public Entry getEntry(int index) {
+        Entry entry;
+        try{
+            entry = entries.get(index-1);
+        }catch(IndexOutOfBoundsException e){
+            entry = null;
+        }
+
+        return entry;
+    }
+
+    public static void uploadNewUser(String username, String password) {
+
+    }
+
+    public static ArrayList<User> getUserList(){
+
+    }
+
 }
