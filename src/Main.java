@@ -10,7 +10,7 @@ public class Main {
 
         //entryDisplay test = new entryDisplay(testEntry);
 
-        //defaultWindow w = new defaultWindow();
+        defaultWindow w = new defaultWindow();
 
         //createAccountWindow c = new createAccountWindow();
     }
