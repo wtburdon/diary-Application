@@ -1,6 +1,8 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class defaultWindow extends JFrame {
     private JPanel contentPane;
@@ -34,8 +36,14 @@ public class defaultWindow extends JFrame {
 
 
     private void loginAttempt(){
-        if(usernameField1.getText().equals("admin") && passwordField1.getText().equals("admin")){
-            System.out.println("Login Successful");
+        ArrayList<User> existingUsers = User.getUserList();
+
+        for(User u : existingUsers){
+            if(u.getUsername().equals(usernameField1.getText())){
+                if(u.checkPassword(Arrays.toString(passwordField1.getPassword()))){
+                    System.out.println("login successful");
+                }
+            }
         }
     }
 
