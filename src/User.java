@@ -38,7 +38,9 @@ public class User {
     }
 
     public static ArrayList<User> getUserList(){
+        ArrayList<User> users = new ArrayList<>();
 
+        return users;
     }
 
 }
