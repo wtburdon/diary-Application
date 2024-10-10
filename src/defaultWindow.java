@@ -45,9 +45,13 @@ public class defaultWindow extends JFrame {
             if(u.getUsername().equals(username)){
                 if(u.checkPassword(password)){
                     System.out.println("login successful");
+                    GUI.displayEntryList();
+                    dispose();
                 }
             }
         }
+
+    usernameLabel.setText("Username: (Login Failed)");
     }
 
 }
