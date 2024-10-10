@@ -16,7 +16,7 @@ public class defaultWindow extends JFrame {
 
         this.setTitle("Login Window");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setBounds(100, 100, 450, 300);
+        this.setBounds(100, 100, 200, 300);
         this.setVisible(true);
 
         //Allows for login
