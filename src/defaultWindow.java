@@ -37,10 +37,13 @@ public class defaultWindow extends JFrame {
 
     private void loginAttempt(){
         ArrayList<User> existingUsers = User.getUserList();
+        String username = usernameField1.getText();
+        String password = new String(passwordField1.getPassword());
+
 
         for(User u : existingUsers){
-            if(u.getUsername().equals(usernameField1.getText())){
-                if(u.checkPassword(Arrays.toString(passwordField1.getPassword()))){
+            if(u.getUsername().equals(username)){
+                if(u.checkPassword(password)){
                     System.out.println("login successful");
                 }
             }
