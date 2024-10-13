@@ -1,6 +1,7 @@
 import javax.swing.*;
 
 public class GUI {
+    static JFrame frame;
 
     public static void start(){
 
@@ -12,10 +13,14 @@ public class GUI {
     }
 
     public static void displayDefaultWindow(){
-
+        frame = new defaultWindow();
     }
 
-    public static void displayEntry(){
+    public static void displayCreateAccountWindow(){
+        frame = new createAccountWindow();
+    }
 
+    public static void displayEntry(Entry e){
+        frame = new entryDisplay(e);
     }
 }
