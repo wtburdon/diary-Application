@@ -58,6 +58,10 @@ public class User {
         return entry;
     }
 
+    public ArrayList<String> getEntries() {
+        return entries;
+    }
+
     public static void uploadNewUser(String username, String password) {
 
     }
