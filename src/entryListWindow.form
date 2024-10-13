@@ -28,13 +28,7 @@
           <component id="8ea65" class="javax.swing.JList" binding="entryList">
             <constraints/>
             <properties>
-              <model>
-                <item value="first"/>
-                <item value="second"/>
-                <item value="third"/>
-                <item value="fourth"/>
-                <item value="fifth"/>
-              </model>
+              <model/>
             </properties>
           </component>
         </children>
