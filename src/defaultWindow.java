@@ -41,7 +41,7 @@ public class defaultWindow extends JFrame {
     }
 
     private void createAccount(){
-
+        GUI.displayCreateAccountWindow();
     }
 
     private void loginAttempt(){
