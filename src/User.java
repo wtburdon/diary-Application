@@ -58,6 +58,10 @@ public class User {
         return entry;
     }
 
+    public Entry getEntry(String title) {
+        return Entry.loadEntry(title);
+    }
+
     public ArrayList<String> getEntries() {
         return entries;
     }
